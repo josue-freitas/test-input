@@ -1,0 +1,14 @@
+name: One!
+
+on:
+  pull_request:
+    branches: [ "master", "develop" ]
+  push:
+    branches: [ "master", "develop" ]
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Send greeting
+      run: echo!"
